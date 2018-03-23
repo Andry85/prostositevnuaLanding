@@ -1,0 +1,4 @@
+/node_modules/
+/dist/
+/src/.idea/
+package.json
