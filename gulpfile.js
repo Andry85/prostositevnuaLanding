@@ -12,6 +12,7 @@ var runSequence = require('run-sequence');
 var autoprefixer = require('gulp-autoprefixer');
 var spritesmith = require('gulp.spritesmith');
 var notify = require( 'gulp-notify' );
+var svgSprite = require("gulp-svg-sprites");
 
 
 
@@ -35,14 +36,15 @@ gulp.task('sprite', function() {
         gulp.src('src/img/icons/*.*') // путь, откуда берем картинки для спрайта
             .pipe(spritesmith({
                 algorithm: 'top-down',
-                imgName: 'sprite.png',
-                cssName: 'sprite.css',
+                imgName: 'spritepng.png',
+                cssName: 'spritepng.css',
                 imgPath: '../img/sprite.png'
             }));
 
     spriteData.img.pipe(gulp.dest('src/img/')); // путь, куда сохраняем картинку
     spriteData.css.pipe(gulp.dest('src/css/')); // путь, куда сохраняем стили
 });
+
 
 gulp.task('fonts', function() {
     return gulp.src('src/fonts/**/*')
@@ -80,13 +82,10 @@ gulp.task('useref', function () {
 });
 
 
-
-
 gulp.task('images', function() {
     return gulp.src('src/img/**/*.+(png|jpg|jpeg|gif|svg)')
         .pipe(gulp.dest('dist/img'))
 });
-
 
 
 gulp.task('libs', function() {

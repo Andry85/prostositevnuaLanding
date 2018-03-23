@@ -7,11 +7,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="keywords" content="">
 <meta name="description" content="">
-<link href="https://fonts.googleapis.com/css?family=Merriweather|Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
 <!--build:css css/main.min.css-->
     <link rel="stylesheet" href="css/slicknav.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/sprite.css">
+    <link rel="stylesheet" href="svg/css/sprite.css">
     <link rel="stylesheet" href="css/main.css">
 <!--endbuild-->
 </head>
@@ -20,196 +21,49 @@
         <header class="header">
             <div class="container">
                 <div class="row">
-                  <div class="col-xs-4 col-sm-2">
-                      <a class="logo" href="#" title=""><img src="../img/logo.png" alt=""></a>
-                  </div>
-                  <div class="col-lg-1 visible-lg-1"></div>
-                  <div class="col-sm-7">
-                      <ul class="menu">
-                        <li><a href="#about" title="">О нас</a>
-                        <li><a href="#faq" title="">FAQ</a>
-                        <li><a href="#students" title="">Студенты</a>
-                        <li><a href="#teachers" title="">Учителя</a>
-                        <li><a href="#contacts" title="">Контакты</a>
-                      </ul>
-                  </div>
-                  <div class="hidden-xs col-sm-3 col-md-3 col-lg-2">
-                      <div class="phone">
-                          <span class="icon icon-phone-icon"></span>
-                          <a href="tel:+380638576392" title="">(063)-857-63-92</a>
-                      </div>
-                      <address class="address">
-                          <span class="icon icon-address-icon"></span>
-                          ул. М. Шымка 14
-                      </address>
-                  </div>
+                    <div class="col-md-2">
+                        <a class="logo" href="#">
+                            <img src="img/logo.png" alt="" title="">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <nav>
+                            <ul class="menu">
+                                <li>
+                                    <a href="#" title="">бриф</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">работы</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">faq</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="contactsList">
+                            <li>
+                                <span class="smartphone"></span>
+                                (063)-857-63-92
+                            </li>
+                            <li>
+                                <span class="house"></span>
+                                ул. М. Шимка 14
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
             </div>
         </header>
-        <main class="main">
-            <div id="about" class="preambule">
-                <div class="preambule__inner">
-                    <span class="bigban"></span>
-                    <h1>Школа английского языка</h1>
-                    <h3>оставте свой телефон и  Вам перезвонят</h3>
-                    <form class="sendForm" method="post" action="#">
-                        <input class="sendForm__input" type="text" placeholder="Телефон">
-                        <button class="sendForm__btn">Отправить</button>
-                    </form>
-                </div>
-            </div>
-            <div id="faq" class="questions">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h2 class="questions__title">FAQ</h2>
-                            <div class="question">
-                                <div class="question__head">
-                                    <h3 class="question__title">Что нужно, чтобы попасть к нам на обучение?</h3>
-                                </div>
-                                <p class="question__body"><b>Ответ:</b> Вам нужно позвонить нам и записаться на определения вашего уровня английского языка.</p>
-                            </div>
-                            <div class="question">
-                                <div class="question__head">
-                                    <h3 class="question__title">Какая цена за обучение?</h3>
-                                </div>
-                                <p class="question__body"><b>Ответ:</b>50 грн. за занятие.</p>
-                            </div>
-                            <div class="question">
-                                <div class="question__head">
-                                    <h3 class="question__title">В какие дни проходят занятия?</h3>
-                                </div>
-                                <p class="question__body"><b>Ответ:</b>понидельник, четверг</p>
-                            </div>
-                            <div class="question">
-                                <div class="question__head">
-                                    <h3 class="question__title">Какая длительность обучения?</h3>
-                                </div>
-                                <p class="question__body"><b>Ответ:</b>длительность одного уровня 5 месяцев</p>
-                            </div>
-                            <div class="question">
-                                <div class="question__head">
-                                    <h3 class="question__title">Есть лит сертификат при окончании курсов?</h3>
-                                </div>
-                                <p class="question__body"><b>Ответ:</b>Да, есть.</p>
-                            </div>
-                            <div class="question">
-                                <div class="question__head">
-                                    <h3 class="question__title">Как происходять уроки?</h3>
-                                </div>
-                                <p class="question__body"><b>Ответ:</b>На наших курсах мы уделяем внимание общению в первую очередь.</p>
-                            </div>
-                            <div class="question">
-                                <div class="question__head">
-                                    <h3 class="question__title">Какой будет мой уровень владения английским языком
-                                    при окончании обучения?</h3>
-                                </div>
-                                <p class="question__body"><b>Ответ:</b>Ваш уровень будет зависит от вашего старания и от прохождения тестов на овладения языком.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="students" class="students">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2 class="students__title">Студенты</h2>
-                            <ul class="studentsList">
-                                <li class="studentsList__item">
-                                    <img src="img/001.jpg" alt="">
-                                </li>
-                                <li class="studentsList__item">
-                                    <img src="img/002.jpg" alt="">
-                                </li>
-                                <li class="studentsList__item">
-                                    <img src="img/003.jpg" alt="">
-                                </li>
-                                <li class="studentsList__item">
-                                    <img src="img/004.jpg" alt="">
-                                </li>
-                                <li class="studentsList__item">
-                                    <img src="img/005.jpg" alt="">
-                                </li>
-                                <li class="studentsList__item">
-                                    <img src="img/006.jpg" alt="">
-                                </li>
-                                <li class="studentsList__item">
-                                    <img src="img/007.jpg" alt="">
-                                </li>
-                                <li class="studentsList__item">
-                                    <img src="img/008.jpg" alt="">
-                                </li>
-                                <li class="studentsList__item">
-                                    <img src="img/009.jpg" alt="">
-                                </li>
-                                <li class="studentsList__item">
-                                    <img src="img/010.jpg" alt="">
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="teachers" class="teachers">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2 class="teachers__title">Учителя</h2>
-                            <ul class="teachersList">
-                                <li class="teachersList__item">
-                                    <a href="#" title="">
-                                        <figure>
-                                            <img src="img/013.jpg" alt="">
-                                            <figcaption>Оксана Петрова</figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                                <li class="teachersList__item">
-                                    <a href="#" title="">
-                                        <figure>
-                                            <img src="img/014.jpg" alt="">
-                                            <figcaption>Людмила Коваль</figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                                <li class="teachersList__item">
-                                    <a href="#" title="">
-                                        <figure>
-                                            <img src="img/015.jpg" alt="">
-                                            <figcaption>Ольга Чупра</figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                                <li class="teachersList__item">
-                                    <a href="#" title="">
-                                        <figure>
-                                            <img src="img/016.jpg" alt="">
-                                            <figcaption>Инна Крук</figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="contacts"></div>
-        </main>
     </div>
-    <footer class="footer">
-        <div class="footer__contacts">
-            <div class="footer__phone">
-                <span class="icon icon-footer-phone-icon"></span>
-                <a href="tel:+380638576392" title="">(063)-857-63-92</a>
-            </div>
-            <address class="footer__address">
-                <span class="icon icon-footer-address-icon"></span>
-                ул. М. Шымка 14
-            </address>
-        </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.3028986042855!2d28.51888321607507!3d49.232746179325915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b218bdcae7b%3A0x8b512becf774c2fe!2z0LLRg9C70LjRhtGPINCc0LDQutGB0LjQvNCwINCo0LjQvNC60LAsIDE0LCDQktGW0L3QvdC40YbRjywg0JLRltC90L3QuNGG0YzQutCwINC-0LHQu9Cw0YHRgtGMLCAyMTAwMA!5e0!3m2!1suk!2sua!4v1521461706002" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="libs/jquery.min.js"><\/script>')</script>
     <!-- build:js js/main.min.js -->
