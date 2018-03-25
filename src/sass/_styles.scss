@@ -14,7 +14,6 @@ img{width:auto\9;height:auto;max-width:100%;vertical-align:middle;border:0;-ms-i
 .icon {
   display: inline-block;
   vertical-align: top;
-  font-family: 'EB Garamond', serif;
 }
 
 .wrapper {
@@ -91,8 +90,139 @@ img{width:auto\9;height:auto;max-width:100%;vertical-align:middle;border:0;-ms-i
   height: 30px;
 }
 
+.main {
 
+}
 
+.preambule {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 90px 0 110px 0;
+}
+
+.title {
+  padding: 0 0 0 301px;
+  h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 90px;
+    letter-spacing: 8px;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .arrow {
+    background: url("../img/arrow.png") no-repeat;
+    width: 229px;
+    height: 160px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    left: -103px;
+    top: 13px;
+  }
+}
+.breif {
+  color: #fff;
+  font-weight: 300;
+  background: #7cbc32;
+  border-radius: 10px;
+  border: 2px solid #549409;
+  border-width: 0 2px 2px 0;
+  font-size: 24px;
+  display: block;
+  width: 328px;
+  height: 80px;
+  line-height: 80px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 2px;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #549409;
+  }
+}
+
+.works {
+  background: #fafafb;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 102px 0 112px 0;
+  &__title {
+    font-family: 'EB Garamond', serif;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 0 0 57px 0;
+  }
+}
+
+.worksSlider {
+  .item {
+      figure {
+        a {
+          display: block;
+          position: relative;
+          img {
+            display: block;
+            border: 1px solid #e6e6e6;
+          }
+          .plus {
+            background: url("../img/svg/plus.svg") no-repeat;
+            width: 64px;
+            height: 64px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -32px 0 0 -32px;
+            transition: all 0.5s ease;
+            &:hover {
+              transform: rotate(1turn);
+            }
+          }
+        }
+      }
+  }
+  .owl-dots {
+    bottom: -71px;
+  }
+}
+.owl-dots {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  .owl-dot {
+    outline: none;
+    span {
+      display: inline-block;
+      vertical-align: top;
+      border-radius: 50%;
+      background: #e7e7e7;
+      width: 15px;
+      height: 15px;
+      margin: 0 2px 0 3px;
+    }
+    &.active {
+      span {
+        background: #0054a6;
+      }
+    }
+  }
+}
+
+.faq {
+  padding: 102px 0 0 0;
+  &__title {
+    font-family: 'EB Garamond', serif;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 0 0 57px 0;
+  }
+}
 
 
 

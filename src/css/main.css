@@ -18,8 +18,7 @@ img {
 
 .icon {
   display: inline-block;
-  vertical-align: top;
-  font-family: 'EB Garamond', serif; }
+  vertical-align: top; }
 
 .header {
   padding: 32px 0 19px 0;
@@ -98,6 +97,118 @@ img {
           background-size: 30px 30px;
   width: 30px;
   height: 30px; }
+
+.preambule {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 90px 0 110px 0; }
+
+.title {
+  padding: 0 0 0 301px; }
+  .title h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 90px;
+    letter-spacing: 8px;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top; }
+  .title .arrow {
+    background: url("../img/arrow.png") no-repeat;
+    width: 229px;
+    height: 160px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    left: -103px;
+    top: 13px; }
+
+.breif {
+  color: #fff;
+  font-weight: 300;
+  background: #7cbc32;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  border: 2px solid #549409;
+  border-width: 0 2px 2px 0;
+  font-size: 24px;
+  display: block;
+  width: 328px;
+  height: 80px;
+  line-height: 80px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 2px; }
+  .breif:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #549409; }
+
+.works {
+  background: #fafafb;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 102px 0 112px 0; }
+  .works__title {
+    font-family: 'EB Garamond', serif;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 0 0 57px 0; }
+
+.worksSlider .item figure a {
+  display: block;
+  position: relative; }
+  .worksSlider .item figure a img {
+    display: block;
+    border: 1px solid #e6e6e6; }
+  .worksSlider .item figure a .plus {
+    background: url("../img/svg/plus.svg") no-repeat;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -32px 0 0 -32px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .worksSlider .item figure a .plus:hover {
+      -webkit-transform: rotate(1turn);
+          -ms-transform: rotate(1turn);
+              transform: rotate(1turn); }
+
+.worksSlider .owl-dots {
+  bottom: -71px; }
+
+.owl-dots {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0; }
+  .owl-dots .owl-dot {
+    outline: none; }
+    .owl-dots .owl-dot span {
+      display: inline-block;
+      vertical-align: top;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background: #e7e7e7;
+      width: 15px;
+      height: 15px;
+      margin: 0 2px 0 3px; }
+    .owl-dots .owl-dot.active span {
+      background: #0054a6; }
+
+.faq {
+  padding: 102px 0 0 0; }
+  .faq__title {
+    font-family: 'EB Garamond', serif;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 0 0 57px 0; }
 
 /* Adaptive menu */
 .slicknav_menu {
