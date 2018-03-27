@@ -31,27 +31,6 @@ gulp.task('sass', function(){
     }))
 });
 
-gulp.task('sprite', function() {
-    var spriteData =
-        gulp.src('src/img/icons/*.*') // путь, откуда берем картинки для спрайта
-            .pipe(spritesmith({
-                algorithm: 'top-down',
-                imgName: 'spritepng.png',
-                cssName: 'spritepng.css',
-                imgPath: '../img/sprite.png'
-            }));
-
-    spriteData.img.pipe(gulp.dest('src/img/')); // путь, куда сохраняем картинку
-    spriteData.css.pipe(gulp.dest('src/css/')); // путь, куда сохраняем стили
-});
-
-
-gulp.task('fonts', function() {
-    return gulp.src('src/fonts/**/*')
-        .pipe(gulp.dest('dist/fonts'))
-});
-
-
 
 
 gulp.task('watch', ['browserSync', 'sass'], function(){
@@ -100,12 +79,12 @@ gulp.task('clean:dist', function(callback){
 });
 
 gulp.task('default', function (callback) {
-    runSequence(['sass', 'sprite', 'browserSync', 'watch'], callback)
+    runSequence(['sass', 'browserSync', 'watch'], callback)
 });
 
 
 
 
 gulp.task('build', function (callback) {
-    runSequence(['clean:dist', 'sass', 'useref', 'fonts', 'images', 'libs'], callback)
+    runSequence(['clean:dist', 'sass', 'useref', 'images', 'libs'], callback)
 });
