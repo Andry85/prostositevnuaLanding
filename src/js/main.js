@@ -10,9 +10,11 @@
     $(function(){
         $('.menu').slicknav({
             label: '',
-            duration: 1000
+            duration: 1000,
+            closeOnClick: true
         });
     });
+
 
     // Scrolling menu
     $(".menu").on("click","a", function (event) {
